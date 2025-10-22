@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto: Acendimento de LED com Ímã</title>
+
+  <!-- Fonte Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --font-base: 'Inter', sans-serif;
+      --color-bg: #f9f9f9;
+      --color-white: #ffffff;
+      --color-text: #000000;
+      --color-accent: #000000;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-base);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      background-color: var(--color-white);
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+
+    section h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 3px;
+      background-color: var(--color-accent);
+      margin: 0 auto;
+      right: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      background-color: var(--color-white);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Acendimento de LED com Ímã</h1>
+  </header>
+
+  <div class="container">
+    <section id="grupo">
+      <h2>O Grupo</h2>
+      <p>
+        Nosso grupo é composto por três alunos da Universidade São Francisco (USF), unidos pelo interesse comum em explorar o universo da tecnologia de forma prática e acessível.
+        <br /><br />
+        Acreditamos que a melhor forma de aprender é colocando a mão na massa, e este projeto nos proporcionou exatamente isso: a oportunidade de transformar teoria em experiência real.
+        <br /><br />
+        Somos movidos pela curiosidade e pela vontade de inovar, e queremos demonstrar que, mesmo com recursos simples, é possível criar soluções funcionais e interessantes, aproximando a tecnologia do cotidiano.
+      </p>
+    </section>
+
+    <section id="objetivo">
+      <h2>Objetivo</h2>
+      <p>
+        Nosso principal objetivo com este projeto é compartilhar conhecimento de forma leve, acessível e intuitiva.
+        <br /><br />
+        Acreditamos que aprender sobre eletrônica e tecnologia não precisa ser complicado, pelo contrário, pode ser algo prático e até divertido.
+        <br /><br />
+        Por meio de uma montagem simples, buscamos despertar o interesse por conceitos técnicos que estão presentes no nosso dia a dia, mostrando que mesmo ideias aparentemente complexas podem ser compreendidas e aplicadas com facilidade.
+      </p>
+    </section>
+
+    <section id="descricao">
+      <h2>Como Funciona o Nosso Circuito</h2>
+      <p>
+        Nosso projeto consiste em um circuito simples baseado no uso de um componente chamado <strong>reed switch</strong>, também conhecido como chave magnética. Esse componente possui dois contatos metálicos em seu interior que, quando expostos à presença de um campo magnético como o de um ímã, se aproximam e fecham o circuito.
+        <br /><br />
+        Aproveitamos esse princípio para criar uma aplicação prática: ao aproximar um pequeno ímã do reed switch, o circuito é fechado e a corrente elétrica passa a fluir, acendendo um LED conectado ao sistema.
+        <br /><br />
+        É uma demonstração eficaz e visual de como sensores magnéticos podem ser usados para controlar dispositivos eletrônicos sem contato físico direto. Essa tecnologia é usada em sistemas de alarme, fechaduras eletrônicas, e até em equipamentos médicos. Aqui, nosso objetivo foi apresentar esse conceito de forma clara e acessível, utilizando componentes de baixo custo para ilustrar uma ideia que, apesar de simples, está presente em aplicações reais e avançadas.
+      </p>
+ <img src="20251020_232723.jpg" alt="Foto do circuito com reed switch" style="max-width: 100%; height: auto; margin-top: 20px; border-radius: 8px;" />
+    </section>
+  </div>
+
+  <footer>
+    Projeto universitário • Universidade São Francisco • 2025
+  </footer>
+</body>
+</html>
